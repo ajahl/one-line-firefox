@@ -1,7 +1,16 @@
 /* Title bar */
-.titlebar-buttonbox {
-    display: none !important;
+:root[sizemode="normal"] .titlebar-buttonbox-container {
+    position: fixed;
+    left: 0;
+    top: 10px !important;
 }
+
+:root[sizemode="maximized"] .titlebar-buttonbox-container {
+    position: fixed;
+    left: 0;
+    top: 10px !important;
+}
+
 
 .titlebar-spacer {
     display: none !important;
@@ -13,7 +22,7 @@
 }
 
 #TabsToolbar {
-    margin-left: 20vw !important;
+    margin-left: 40vw !important;
 }
 
 /* Nav bar*/
@@ -21,6 +30,7 @@
     background: transparent !important;
     margin-right: 80vw !important;
     margin-top: -36px !important;
+    margin-left: 70px!important;
 }
 
 /* URL bar */
@@ -32,10 +42,6 @@
     display: none !important;
 }
 
-#tracking-protection-icon-container {
-    display: none !important;
-}
-
 #urlbar-container {
     width: auto !important;
 }
@@ -44,14 +50,11 @@
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    width: 25vw !important;
 }
 
 #urlbar[breakout-extend] {
-    width: 100vw !important;
-}
-
-#page-action-buttons {
-    display: none !important;
+    width: 80vw !important;
 }
 
 #PanelUI-button {
